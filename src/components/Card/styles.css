@@ -18,7 +18,7 @@
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
+.flipped {
   transform: rotateY(180deg);
 }
 
@@ -46,8 +46,9 @@
 }
 
 .card-div {
-  background-color: white;
+/*   background-color: white; */
   color: black;
   font-size: 25vw;
   margin: auto;
+  height: 100%;
 }
