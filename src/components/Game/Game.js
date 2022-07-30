@@ -29,6 +29,9 @@ export default function Game() {
   }
 
   function updateHeld(index) {
+    if (draws !== 1) {
+      return;
+    }
     let newHeld = Array.from(unheldCards);
     if (newHeld.includes(index)) {
       newHeld = newHeld.filter(card => card !== index);
